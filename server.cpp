@@ -18,7 +18,7 @@ int main(){
 	//Bind socket to IP/port
 	sockaddr_in hint;
 	hint.sin_family = AF_INET;
-	hint.sin_port = htons(54000);
+	hint.sin_port = htons(1084);
 	inet_pton(AF_INET,"0.0.0.0",&hint.sin_addr);
 	
 	if(bind(mySocket,(sockaddr*)&hint,sizeof(hint))==-1){
