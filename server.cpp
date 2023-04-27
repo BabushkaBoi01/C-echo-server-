@@ -32,7 +32,7 @@ int main(){
 	}
 	//Accept a call
 	sockaddr_in client;
-	socklent clientSize=sizeof(client);
+	socklen_t clientSize=sizeof(client);
 	char host[NI_MAXHOST];
 	char svc[NI_MAXSERV];
 	
